@@ -1,44 +1,39 @@
-# STEIL — thesteilgroup.com
+# STEIL case study — Fleet carve-out
 
-Next.js 15 (App Router, static export) · brand sheet v1.0 tokens · self-hosted fonts.
+Drop-in Next.js route for `rmc826/steil-site`. Uses the site's existing global
+CSS classes (`.hero-photo`, `.band-dark`, `.statrow.on-dark`, `.area`, `.split`,
+`.hairlist`, `.chip`, `.cta-band`) and the shared `layout.tsx` masthead / Grade
+divider / footer — no new CSS or components needed.
 
-## Deploy to Vercel
+## Files
+- `app/case-studies/fleet-carve-out/page.tsx` → route **`/case-studies/fleet-carve-out`**
+- `public/case-fleet.jpg` → hero photo (placeholder — swap for a licensed image before publishing)
 
-1. Push this repo to GitHub, then "Add New Project" in Vercel and import it.
-   Framework preset auto-detects Next.js; no config needed (static export is set
-   in `next.config.mjs`).
-2. In Vercel → Settings → Domains: add `thesteilgroup.com` as primary; add
-   `www.thesteilgroup.com` and set it to redirect to the apex.
-3. In Vercel → Settings → Environment Variables, add (see `.env.example`):
-   - `NEXT_PUBLIC_TALLY_FORM_ID` — the ID from your Tally form URL (tally.so/r/XXXX).
-     Until set, the diagnostic page shows a mailto fallback.
-   - `NEXT_PUBLIC_POSTHOG_KEY` (+ optional `NEXT_PUBLIC_POSTHOG_HOST`).
-     Vercel Analytics needs no key — just enable Analytics on the project.
-4. Redeploy after setting env vars (they're baked in at build time).
+## Add it to the repo
 
-## Launch-day SEO checklist
+From the root of your local `steil-site` clone:
 
-- [ ] Google Search Console: verify the domain (DNS TXT record on thesteilgroup.com)
-- [ ] Submit https://thesteilgroup.com/sitemap.xml in Search Console
-- [ ] Finish the POV essay in `app/why-pe-backed-saas-stalls/page.tsx`:
-      replace the outline, delete the `robots: { index: false }` line,
-      set `datePublished`, and add the URL to `app/sitemap.ts`
-- [ ] Request indexing on the POV piece the day it publishes
-- [ ] Bing Webmaster Tools (free, and feeds some AI search engines): verify + submit sitemap
+```bash
+# copy the two files in (paths mirror the repo)
+mkdir -p app/case-studies/fleet-carve-out
+cp /path/to/export/app/case-studies/fleet-carve-out/page.tsx app/case-studies/fleet-carve-out/page.tsx
+cp /path/to/export/public/case-fleet.jpg public/case-fleet.jpg
 
-## Where things live
+git checkout -b case-study/fleet-carve-out
+git add app/case-studies/fleet-carve-out/page.tsx public/case-fleet.jpg
+git commit -m "Add fleet carve-out case study"
+git push -u origin case-study/fleet-carve-out
+```
 
-- Brand tokens: `app/globals.css` (`:root` block — matches brand sheet v1.0)
-- Fonts: `app/fonts/` — vendored from the google/fonts repo (OFL license),
-  self-hosted via `next/font/local`. No Google request at build or runtime.
-- Wordmark: `components/Wordmark.tsx` — fixed vector paths; never retype the logo
-- The Grade divider: `components/GradeRule.tsx` — one per page, in the layout
-- Per-page SEO: each `page.tsx` exports `metadata` (title/description/canonical)
-- Structured data: JSON-LD on home (ProfessionalService) and the POV piece (Article)
-- Sitemap/robots: `app/sitemap.ts`, `app/robots.ts`
+Then open a PR from that branch. `npm run dev` and visit
+`/case-studies/fleet-carve-out` to preview locally first.
 
-## Local dev
-
-    npm install
-    npm run dev      # http://localhost:3000
-    npm run build    # static export to out/
+## Before publishing
+- **Photo:** `public/case-fleet.jpg` is the stock image you supplied. Confirm the
+  license permits use, or replace it (keep the same filename).
+- **Metrics:** 5× pipeline / 3 logos / 30% conference ROI are stated as given —
+  tie to a baseline if legal/marketing wants it.
+- **Linking:** it's a standalone page (not in the top nav). To surface it, add a
+  link from `/insights` or a new "Work" nav item in `app/layout.tsx`.
+- **Client quote:** none included — add a `<blockquote>` in the Resolution or
+  Results section if you get an approved testimonial.
