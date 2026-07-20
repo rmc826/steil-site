@@ -14,10 +14,11 @@ export default function HowItWorks() {
       <section className="hero no-rule">
         <div className="container">
           <span className="kicker">How It Works</span>
-          <h1>Three steps. No mystery.</h1>
+          <h1>Easy to start.<br />Built to scale.</h1>
           <p className="lede">
-            Every engagement follows the same shape &mdash; see your options, build the
-            engine, run it.
+            We designed the way we work around a simple idea: partnering with an
+            agency should feel like adding a strategic arm to your company &mdash; not
+            managing another vendor.
           </p>
         </div>
       </section>

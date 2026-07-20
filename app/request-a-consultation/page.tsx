@@ -17,9 +17,9 @@ export default function RequestAConsultation() {
           <span className="kicker">Request a Consultation</span>
           <h1>See your options.</h1>
           <p className="lede">
-            Nothing has to be broken. Bring where you want to grow &mdash; a new
-            segment, a bigger brand footprint, a channel you haven&rsquo;t cracked
-            &mdash; and we&rsquo;ll walk through what your options actually look like.
+            Running a company means a hundred competing priorities. Bring the growth
+            ones &mdash; a new segment, a bigger brand footprint, a channel you
+            haven&rsquo;t cracked &mdash; and we&rsquo;ll map your options together.
           </p>
         </div>
       </section>

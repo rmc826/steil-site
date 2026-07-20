@@ -14,10 +14,11 @@ export default function WhoWeHelp() {
       <section className="hero no-rule">
         <div className="container">
           <span className="kicker">Who We Help</span>
-          <h1>Built for the people carrying the number.</h1>
+          <h1>Running a company is hard.<br />Working with us isn&rsquo;t.</h1>
           <p className="lede">
-            Three seats own growth at a B2B software company. Different chair,
-            different pressure &mdash; same engine underneath.
+            We&rsquo;re the strategic arm of your growth &mdash; a partner that plugs
+            into your team, understands the pressure each seat carries, and scales
+            your marketing operations like an extension of the company.
           </p>
         </div>
       </section>

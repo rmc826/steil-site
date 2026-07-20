@@ -34,7 +34,7 @@ AI Ad Placement · Google Ads · Programmatic Display & Video · Managed Confere
 
 ## Page inventory
 / · /focus-areas · /how-it-works · /who-we-help · /insights (+3 articles) · /request-a-consultation · /contact · /why-pe-backed-saas-stalls (draft, noindex)
-Design system per page: oversized mono numerals, tight copy (2 sentences/block), service chips, one dark or photo band per page, reveal-on-scroll. "Operator-led" language banned. Insights = content home; LinkedIn posts link to articles, articles target SEO phrases (growth advisory, AI search visibility, B2B marketing).
+Design system per page: oversized mono numerals, tight copy (2 sentences/block), service chips, one dark or photo band per page, reveal-on-scroll. "Operator-led" language banned on service pages; permitted ONLY on /about as founder story (Ryan "RC" Campbell, 11+ yrs corporate). Voice = partner energy: "running a company is hard, we make it easy to work with us," strategic arm, not vendor. Insights = content home; LinkedIn posts link to articles, articles target SEO phrases (growth advisory, AI search visibility, B2B marketing).
 Redirects: /who-its-for → /who-we-help · /request-a-diagnostic → /request-a-consultation
 
 ## Tech
