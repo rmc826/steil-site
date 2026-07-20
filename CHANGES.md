@@ -32,7 +32,8 @@ that lives in the design system at `components/icon/Icon.jsx`, ported to TSX.)
 
 | File | What changed |
 | --- | --- |
-| `app/layout.tsx` | Nav array drops **How It Works** and **Request a Consultation**; adds a **Get in touch** CTA (`className="nav-cta"`) → `/contact`. Footer email → `rc@steilgrowth.com`. |
+| `app/layout.tsx` | Nav array drops **How It Works**, **Request a Consultation**, and the plain **Contact** link (it was duplicative). Single entry point is the **Get in touch** CTA (`className="nav-cta"`) → `/contact`. Footer email → `rc@steilgrowth.com`. |
+| `app/contact/page.tsx` | mailto fallback email → `rc@steilgrowth.com`. This is now the one contact surface. |
 | `app/page.tsx` | Icons added to the four core areas (`full-channel`, `velocity`, `pipeline`, `alignment`). Hero CTAs: primary **Get in touch** → `/contact`, secondary **Focus Areas** → `/focus-areas` (was "How It Works"). Closing CTA → `/contact`. JSON-LD email → `rc@steilgrowth.com`. |
 | `app/focus-areas/page.tsx` | The four inline `Art` SVGs replaced with `<Icon>` (`full-channel`, `velocity`, `pipeline`, `alignment`); area 03 uses `var(--blue-on-dark)`. Closing CTA → `/contact`. |
 | `app/sitemap.ts` | Removed `/how-it-works` and `/request-a-consultation`. |
@@ -54,9 +55,14 @@ Files that contain it: `app/about/page.tsx`, `app/who-we-help/page.tsx`,
 `app/insights/direct-mail-2026/page.tsx`, `app/insights/next-segment-in-your-crm/page.tsx`,
 `app/why-pe-backed-saas-stalls/page.tsx`.
 
-**c. Update the email everywhere** it appears (footer is already handled in
-`app/layout.tsx`; check any mailto fallbacks): `ryan@thesteilgroup.com` →
-`rc@steilgrowth.com`.
+**c. Confirm no old email remains.** All contact emails must be
+`rc@steilgrowth.com`. `app/layout.tsx` and `app/contact/page.tsx` are already
+patched in this package. The only other `mailto:ryan@thesteilgroup.com` lived on
+the now-deleted `request-a-consultation` / `request-a-diagnostic` pages, so it
+disappears with them — but grep once to be sure:
+`grep -rn "ryan@thesteilgroup.com" app` should return nothing.
+(The `thesteilgroup.com` *domain* in metadata/URLs is left as-is — only the email
+changed. Tell me if the domain is also moving to steilgrowth.com.)
 
 ## 4. Delete (retired routes)
 

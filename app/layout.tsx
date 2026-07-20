@@ -58,7 +58,6 @@ const nav = [
   { href: '/who-we-help', label: 'Who We Help' },
   { href: '/insights', label: 'Insights' },
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
 ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

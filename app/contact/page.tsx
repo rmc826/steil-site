@@ -32,7 +32,7 @@ export default function Contact() {
             />
           ) : (
             <p>
-              Email <a href="mailto:ryan@thesteilgroup.com">ryan@thesteilgroup.com</a>{' '}
+              Email <a href="mailto:rc@steilgrowth.com">rc@steilgrowth.com</a>{' '}
               and we&rsquo;ll take it from there.
             </p>
           )}
