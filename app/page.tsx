@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Marquee from '@/components/Marquee';
+import { Icon } from '@/components/Icon';
 
 export const metadata: Metadata = {
   title: 'STEIL — GTM-as-a-Service for B2B Software & Data Companies',
@@ -27,7 +28,7 @@ const jsonLd = {
     'Conference marketing',
     'Print campaigns',
   ],
-  email: 'ryan@thesteilgroup.com',
+  email: 'rc@steilgrowth.com',
 };
 
 export default function Home() {
@@ -55,11 +56,11 @@ export default function Home() {
             delivered as a service.
           </p>
           <div className="cta-row">
-            <Link href="/request-a-consultation" className="btn primary">
-              Request a Consultation
+            <Link href="/contact" className="btn primary">
+              Get in touch
             </Link>
-            <Link href="/how-it-works" className="btn">
-              How It Works
+            <Link href="/focus-areas" className="btn">
+              Focus Areas
             </Link>
           </div>
           <div className="statrow on-dark">
@@ -92,7 +93,10 @@ export default function Home() {
           </div>
           <div className="helpgrid">
             <div>
-              <span className="tag">01</span>
+              <div className="icon-head">
+                <span className="tag">01</span>
+                <Icon name="full-channel" size={34} />
+              </div>
               <h3>Develop an integrated marketing strategy</h3>
               <p>
                 One plan across print, digital, conferences, and AI &mdash; every
@@ -101,7 +105,10 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <span className="tag">02</span>
+              <div className="icon-head">
+                <span className="tag">02</span>
+                <Icon name="velocity" size={34} />
+              </div>
               <h3>Pressure-test your GTM strategy</h3>
               <p>
                 An outside read on segments, pricing, and win/loss &mdash; then fast
@@ -110,7 +117,10 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <span className="tag">03</span>
+              <div className="icon-head">
+                <span className="tag">03</span>
+                <Icon name="pipeline" size={34} />
+              </div>
               <h3>Capture bottom-of-funnel traffic</h3>
               <p>
                 Own the searches, shortlists, and AI answers where deals are actually
@@ -119,7 +129,10 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <span className="tag">04</span>
+              <div className="icon-head">
+                <span className="tag">04</span>
+                <Icon name="alignment" size={34} />
+              </div>
               <h3>Align sales + marketing</h3>
               <p>
                 Shared targets, shared narrative, shared pipeline &mdash; better
@@ -188,13 +201,13 @@ export default function Home() {
       {/* ---------- CTA ---------- */}
       <div className="cta-band">
         <div className="container">
-          <h2>Start with a consultation.</h2>
+          <h2>Start with a conversation.</h2>
           <p>
             One working session on where you want to grow. You leave with a clear view
             of your options.
           </p>
-          <Link href="/request-a-consultation" className="btn primary">
-            Request a Consultation
+          <Link href="/contact" className="btn primary">
+            Get in touch
           </Link>
         </div>
       </div>

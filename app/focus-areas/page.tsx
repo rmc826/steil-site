@@ -1,44 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Icon } from '@/components/Icon';
 
 export const metadata: Metadata = {
   title: 'Focus Areas — Integrated Strategy, GTM Testing, Bottom-of-Funnel, Alignment',
   description:
     'STEIL\u2019s four core areas: integrated marketing strategy across print, digital, conferences, and AI; GTM pressure testing; bottom-of-funnel capture and competitive differentiation; sales and marketing alignment.',
   alternates: { canonical: '/focus-areas' },
-};
-
-/* In-brand line art per area — geometric, stroke-based, no icons libraries */
-const Art = {
-  layers: (
-    <svg viewBox="0 0 150 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <rect x="10" y="70" width="130" height="14" fill="none" stroke="#2333E8" strokeWidth="2" />
-      <rect x="24" y="48" width="102" height="14" fill="none" stroke="#2333E8" strokeWidth="2" />
-      <rect x="38" y="26" width="74" height="14" fill="none" stroke="#2333E8" strokeWidth="2" />
-      <path d="M75 10 L75 100" stroke="#0F1215" strokeWidth="2" />
-    </svg>
-  ),
-  cycle: (
-    <svg viewBox="0 0 150 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M30 55 A45 45 0 1 1 75 100" fill="none" stroke="#2333E8" strokeWidth="2" />
-      <path d="M75 100 L60 92 M75 100 L68 86" stroke="#2333E8" strokeWidth="2" fill="none" />
-      <path d="M55 55 L95 55 M75 35 L75 75" stroke="#0F1215" strokeWidth="2" />
-    </svg>
-  ),
-  funnel: (
-    <svg viewBox="0 0 150 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M20 15 L130 15 L90 60 L90 95 L60 95 L60 60 Z" fill="none" stroke="#7C89F5" strokeWidth="2" />
-      <path d="M60 78 L90 78" stroke="#7C89F5" strokeWidth="2" />
-      <rect x="66" y="84" width="18" height="11" fill="#7C89F5" />
-    </svg>
-  ),
-  converge: (
-    <svg viewBox="0 0 150 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M10 20 L90 55 L10 90" fill="none" stroke="#2333E8" strokeWidth="2" />
-      <path d="M140 20 L90 55 L140 90" fill="none" stroke="#0F1215" strokeWidth="2" />
-      <circle cx="90" cy="55" r="5" fill="#2333E8" />
-    </svg>
-  ),
 };
 
 export default function FocusAreas() {
@@ -60,7 +28,9 @@ export default function FocusAreas() {
           <div className="area" data-reveal>
             <div>
               <div className="bignum">01</div>
-              <div className="area-art">{Art.layers}</div>
+              <div className="area-art">
+                <Icon name="full-channel" size={92} strokeWidth={1.25} color="var(--steil-blue)" />
+              </div>
             </div>
             <div>
               <h3>Develop an integrated marketing strategy</h3>
@@ -83,7 +53,9 @@ export default function FocusAreas() {
           <div className="area" data-reveal>
             <div>
               <div className="bignum">02</div>
-              <div className="area-art">{Art.cycle}</div>
+              <div className="area-art">
+                <Icon name="velocity" size={92} strokeWidth={1.25} color="var(--steil-blue)" />
+              </div>
             </div>
             <div>
               <h3>Pressure-test your GTM strategy</h3>
@@ -108,7 +80,9 @@ export default function FocusAreas() {
           <div className="area" style={{ borderTop: 'none', padding: 0 }}>
             <div>
               <div className="bignum">03</div>
-              <div className="area-art">{Art.funnel}</div>
+              <div className="area-art">
+                <Icon name="pipeline" size={92} strokeWidth={1.25} color="var(--blue-on-dark)" />
+              </div>
             </div>
             <div>
               <h3>Capture bottom-of-funnel traffic</h3>
@@ -138,7 +112,9 @@ export default function FocusAreas() {
           <div className="area" style={{ borderTop: 'none' }} data-reveal>
             <div>
               <div className="bignum">04</div>
-              <div className="area-art">{Art.converge}</div>
+              <div className="area-art">
+                <Icon name="alignment" size={92} strokeWidth={1.25} color="var(--steil-blue)" />
+              </div>
             </div>
             <div>
               <h3>Align sales + marketing</h3>
@@ -159,8 +135,8 @@ export default function FocusAreas() {
       <div className="cta-band">
         <div className="container">
           <h2>Not sure where to start?</h2>
-          <p>That&rsquo;s what the consultation is for.</p>
-          <Link href="/request-a-consultation" className="btn primary">Request a Consultation</Link>
+          <p>That&rsquo;s what a first conversation is for.</p>
+          <Link href="/contact" className="btn primary">Get in touch</Link>
         </div>
       </div>
     </>

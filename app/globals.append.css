@@ -1,0 +1,16 @@
+/* ============================================================
+   APPEND these rules to the END of app/globals.css.
+   They are purely additive (later rules win), so nothing above
+   needs to be deleted.
+   ============================================================ */
+
+/* nav CTA button — the "Get in touch" pill in the masthead */
+.nav ul a.nav-cta { border: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 9px 16px; }
+.nav ul a.nav-cta:hover { background: var(--ink); color: var(--paper); border-bottom-color: var(--ink); }
+
+/* homepage four-core-areas: numeral + icon on one baseline */
+.helpgrid .icon-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.helpgrid h3 { margin: 18px 0 12px; }
+
+/* focus-areas: let the new Icon size itself (was hard-locked to 150px) */
+.area .area-art svg { width: 92px; height: 92px; }

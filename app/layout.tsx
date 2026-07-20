@@ -55,12 +55,10 @@ export const metadata: Metadata = {
 
 const nav = [
   { href: '/focus-areas', label: 'Focus Areas' },
-  { href: '/how-it-works', label: 'How It Works' },
   { href: '/who-we-help', label: 'Who We Help' },
   { href: '/insights', label: 'Insights' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
-  { href: '/request-a-consultation', label: 'Request a Consultation' },
 ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -79,6 +77,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Link href={item.href}>{item.label}</Link>
                   </li>
                 ))}
+                <li>
+                  <Link href="/contact" className="nav-cta">
+                    Get in touch
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>
@@ -91,7 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="container inner">
             <span>STEIL · GTM-as-a-Service</span>
             <span>
-              <a href="mailto:ryan@thesteilgroup.com">ryan@thesteilgroup.com</a>
+              <a href="mailto:rc@steilgrowth.com">rc@steilgrowth.com</a>
             </span>
             <span>© {new Date().getFullYear()} The Steil Group LLC</span>
           </div>
