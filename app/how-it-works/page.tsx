@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'How It Works — Fractional GTM for PE Portfolio Companies',
+  title: 'How It Works — GTM-as-a-Service, Step by Step',
   description:
-    'How a STEIL engagement runs: a GTM diagnostic, a fixed-scope Foundation engagement, then STEIL as your ongoing fractional marketing function \u2014 built for PE portfolio companies and small-cap software.',
+    'How a STEIL engagement runs: a consultation, a fixed-scope Foundation engagement, then STEIL as your ongoing marketing engine \u2014 GTM-as-a-Service for B2B software and data companies.',
   alternates: { canonical: '/how-it-works' },
 };
 
@@ -28,19 +28,19 @@ export default function HowItWorks() {
           <ul className="hairlist">
             <li>
               <span className="tag">Step 01 · One conversation</span>
-              <h3>The Diagnostic</h3>
+              <h3>The Consultation</h3>
               <p>
-                A structured working session on your growth data, GTM motion, and
-                competitive position. You leave with our honest read on whether the stall
-                is a marketing problem. If it isn&rsquo;t &mdash; if it&rsquo;s product,
-                pricing power, or market &mdash; we say so and part friends.
+                A structured working session on your goals, GTM motion, and competitive
+                position. You leave with a clear view of your options &mdash; and our
+                honest read on which ones are worth your money. If we&rsquo;re not the
+                right fit, we say so and part friends.
               </p>
             </li>
             <li>
               <span className="tag">Step 02 · 3–6 months, fixed scope</span>
               <h3>The Foundation Engagement</h3>
               <p>
-                The rebuild: full GTM diagnostic review, messaging and positioning
+                The rebuild: full GTM assessment, messaging and positioning
                 framework, digital presence rebuilt (site and SEO baseline), and core
                 channels stood up &mdash; paid search, LinkedIn, and AI search
                 optimization. It closes with a board-legible readout: what changed, what
@@ -53,8 +53,8 @@ export default function HowItWorks() {
               <p>
                 A monthly retainer where STEIL <em>is</em> the marketing department:
                 partner-level strategy, execution across every active channel, and
-                reporting written in the language your sponsor reads. Scale it up or down
-                with the hold-period plan.
+                reporting your board can read in ninety seconds. Scale it up or down with
+                your growth plan.
               </p>
             </li>
           </ul>
@@ -83,7 +83,7 @@ export default function HowItWorks() {
               <h3>Priced for the mid-market</h3>
               <p>
                 A fraction of a CMO hire, a fraction of an enterprise agency &mdash; sized
-                so the math works inside a hold period.
+                so the math works at mid-market scale.
               </p>
             </li>
           </ul>
@@ -93,8 +93,8 @@ export default function HowItWorks() {
       <div className="cta-band">
         <div className="container">
           <h2>Step one is a conversation.</h2>
-          <p>Bring your growth data. We&rsquo;ll bring the honest read.</p>
-          <Link href="/request-a-diagnostic" className="btn primary">Request a Diagnostic</Link>
+          <p>Bring where you want to grow. We&rsquo;ll bring the options.</p>
+          <Link href="/request-a-consultation" className="btn primary">Request a Consultation</Link>
         </div>
       </div>
     </>

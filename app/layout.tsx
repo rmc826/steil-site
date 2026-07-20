@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Wordmark from '@/components/Wordmark';
 import GradeRule from '@/components/GradeRule';
 import AnalyticsProvider from '@/components/AnalyticsProvider';
+import Reveal from '@/components/Reveal';
+import GA from '@/components/GA';
 import './globals.css';
 
 // Fonts are vendored in app/fonts/ (from the google/fonts repo, OFL-licensed)
@@ -54,8 +56,9 @@ export const metadata: Metadata = {
 const nav = [
   { href: '/focus-areas', label: 'Focus Areas' },
   { href: '/how-it-works', label: 'How It Works' },
-  { href: '/who-its-for', label: 'Who It\u2019s For' },
-  { href: '/request-a-diagnostic', label: 'Request a Diagnostic' },
+  { href: '/who-we-help', label: 'Who We Help' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/request-a-consultation', label: 'Request a Consultation' },
 ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -84,13 +87,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <footer className="site-footer">
           <div className="container inner">
-            <span>STEIL — /style/ — German: steep</span>
+            <span>STEIL · GTM-as-a-Service</span>
             <span>
               <a href="mailto:ryan@thesteilgroup.com">ryan@thesteilgroup.com</a>
             </span>
             <span>© {new Date().getFullYear()} The Steil Group LLC</span>
           </div>
         </footer>
+        <GA />
+        <Reveal />
         <AnalyticsProvider />
         <Analytics />
       </body>

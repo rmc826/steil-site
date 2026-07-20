@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/who-its-for", "destination": "/who-we-help", "permanent": true },
+    { "source": "/request-a-diagnostic", "destination": "/request-a-consultation", "permanent": true }
+  ]
+}

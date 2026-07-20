@@ -65,9 +65,9 @@ export default function POVPiece() {
 
         <div className="cta-band">
           <div className="container">
-            <h2>Is this your portfolio company?</h2>
-            <p>The diagnostic is where we find out.</p>
-            <Link href="/request-a-diagnostic" className="btn primary">Request a Diagnostic</Link>
+            <h2>Sound familiar?</h2>
+            <p>The consultation is where we find out.</p>
+            <Link href="/request-a-consultation" className="btn primary">Request a Consultation</Link>
           </div>
         </div>
       </article>

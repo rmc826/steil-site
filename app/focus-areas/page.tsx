@@ -70,9 +70,9 @@ export default function FocusAreas() {
 
       <div className="cta-band">
         <div className="container">
-          <h2>Not sure which one you need?</h2>
-          <p>That&rsquo;s what the diagnostic is for.</p>
-          <Link href="/request-a-diagnostic" className="btn primary">Request a Diagnostic</Link>
+          <h2>Not sure where to start?</h2>
+          <p>That&rsquo;s what the consultation is for.</p>
+          <Link href="/request-a-consultation" className="btn primary">Request a Consultation</Link>
         </div>
       </div>
     </>

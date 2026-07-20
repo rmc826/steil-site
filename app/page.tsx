@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Marquee from '@/components/Marquee';
 
 export const metadata: Metadata = {
-  title: 'STEIL — The Marketing Function for PE-Backed Software Companies',
+  title: 'STEIL — GTM-as-a-Service for B2B Software & Data Companies',
   description:
-    'Growth stalled. The hold period didn\u2019t. STEIL is the marketing function for PE-backed and small-cap software companies that can\u2019t justify building one — strategy at the partner level, execution across every channel that matters.',
+    'We help B2B software and data companies increase their brand visibility by scaling their marketing operations \u2014 integrated strategy across print, digital, conferences, and AI, delivered as a service.',
   alternates: { canonical: '/' },
 };
 
@@ -15,13 +16,16 @@ const jsonLd = {
   alternateName: 'STEIL',
   url: 'https://thesteilgroup.com',
   description:
-    'Outsourced marketing function (GTM-as-a-Service) for PE-backed and small-cap software companies: GTM strategy, demand generation, AI search optimization, and product messaging, accountable to pipeline and EBITDA.',
+    'GTM-as-a-Service for B2B software and data companies: integrated marketing strategy across print, digital, conferences, and AI; GTM pressure testing; bottom-of-funnel capture and competitive differentiation; sales and marketing alignment.',
   areaServed: 'United States',
   serviceType: [
-    'Go-to-market strategy',
+    'Integrated marketing strategy',
+    'GTM strategy',
     'Demand generation',
-    'AI search optimization',
-    'Product messaging and positioning',
+    'AI advertising',
+    'Programmatic advertising',
+    'Conference marketing',
+    'Print campaigns',
   ],
   email: 'ryan@thesteilgroup.com',
 };
@@ -34,157 +38,163 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="hero no-rule">
+      {/* ---------- HERO ---------- */}
+      <section className="band-dark hero-photo no-rule">
         <div className="container">
-          <span className="kicker">GTM-as-a-Service · PE-Backed &amp; Small-Cap Software</span>
+          <span className="kicker">GTM-as-a-Service · B2B Software &amp; Data</span>
           <h1>
-            Growth stalled.
+            Find your blue ocean.
             <br />
-            The hold period didn&rsquo;t.
+            Build your brand.
+            <br />
+            Unlock growth.
           </h1>
-          <p className="lede">
-            STEIL is the marketing function for software companies that can&rsquo;t justify
-            building one — strategy at the partner level, execution across every channel
-            that matters, accountable to pipeline and EBITDA, not impressions.
+          <p className="lede" style={{ margin: '26px 0 40px' }}>
+            We help B2B software and data companies increase their brand visibility by
+            scaling their marketing operations &mdash; strategy through execution,
+            delivered as a service.
           </p>
           <div className="cta-row">
-            <Link href="/request-a-diagnostic" className="btn primary">
-              Request a Diagnostic
+            <Link href="/request-a-consultation" className="btn primary">
+              Request a Consultation
             </Link>
             <Link href="/how-it-works" className="btn">
               How It Works
             </Link>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="section-head">
-            <h2>Why growth stalls</h2>
-            <span className="kicker quiet">The Thesis</span>
-          </div>
-          <div className="stack">
-            <p>
-              A $15&ndash;50M software company rarely stalls for lack of effort. It stalls
-              for structural reasons: the go-to-market motion that got it here stopped
-              compounding, competitive pressure rose, and ownership is asking for margin
-              expansion with no new capital.
-            </p>
-            <p>
-              The standard answers don&rsquo;t fit. A full marketing organization is a
-              seven-figure commitment. A $400K CMO is a bet most boards won&rsquo;t
-              underwrite mid-hold. An agency executes channels but doesn&rsquo;t own the
-              strategy. What the company needs is the <em>function</em> — and that&rsquo;s
-              what STEIL is.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="section-head">
-            <h2>What makes STEIL different</h2>
-            <span className="kicker quiet">Three things, honestly</span>
-          </div>
-          <ul className="hairlist">
-            <li>
-              <span className="tag">01 — Fluent in your board&rsquo;s language</span>
-              <h3>PE-native reporting</h3>
-              <p>
-                Every readout is built for the room it ends up in: hold-period math,
-                pipeline coverage, CAC trajectory. Board-legible in ninety seconds, not a
-                deck of impressions.
-              </p>
-            </li>
-            <li>
-              <span className="tag">02 — No junior handoff</span>
-              <h3>A senior operator on every account</h3>
-              <p>
-                The person who diagnoses your stall is the person who runs the work. No
-                pitch-team-then-account-team switch. Ever.
-              </p>
-            </li>
-            <li>
-              <span className="tag">03 — The channel incumbents are behind on</span>
-              <h3>AI search optimization, named and owned</h3>
-              <p>
-                Your buyers ask ChatGPT, Claude, and Perplexity who to shortlist. Getting
-                recommended there is a discipline, and it&rsquo;s a standing part of every
-                STEIL engagement.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="section-head">
-            <h2>Focus areas</h2>
-            <span className="kicker quiet">
-              <Link href="/focus-areas">All four →</Link>
-            </span>
-          </div>
-          <ul className="hairlist">
-            <li>
-              <h3>GTM Strategy &amp; Advisory</h3>
-              <p>Stall diagnosis, untapped segments, pricing strategy, win/loss truth.</p>
-            </li>
-            <li>
-              <h3>Demand &amp; Digital</h3>
-              <p>
-                Paid search, paid social, LinkedIn ABM, and SEO — sized for a $15&ndash;50M
-                company, not a Fortune 500 budget.
-              </p>
-            </li>
-            <li>
-              <h3>AI Search Optimization</h3>
-              <p>Get recommended when buyers ask the machines who to buy from.</p>
-            </li>
-            <li>
-              <h3>Product Messaging &amp; Positioning</h3>
-              <p>A narrative that survives a board meeting, and a sales team that can say it.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="section-head">
-            <h2>How an engagement runs</h2>
-            <span className="kicker quiet">
-              <Link href="/how-it-works">The full model →</Link>
-            </span>
-          </div>
-          <div className="statrow">
+          <div className="statrow on-dark">
             <div>
-              <div className="num">01</div>
-              <div className="lbl">Diagnostic conversation</div>
+              <div className="num">+50%</div>
+              <div className="lbl">New-logo pipeline growth</div>
             </div>
             <div>
-              <div className="num">02</div>
-              <div className="lbl">Foundation engagement · 3&ndash;6 mo</div>
+              <div className="num">7x</div>
+              <div className="lbl">Increase in valuation</div>
             </div>
             <div>
-              <div className="num">03</div>
-              <div className="lbl">STEIL as your marketing function</div>
+              <div className="num">+30%</div>
+              <div className="lbl">New-logo growth</div>
+            </div>
+          </div>
+          <span className="src">From past engagements</span>
+        </div>
+      </section>
+
+      {/* ---------- PAST ENGAGEMENTS ---------- */}
+      <Marquee />
+
+      {/* ---------- CORE AREAS ---------- */}
+      <section className="no-rule" data-reveal>
+        <div className="container">
+          <div className="section-head">
+            <h2>We work across four core areas</h2>
+            <span className="kicker quiet">What We Do</span>
+          </div>
+          <div className="helpgrid">
+            <div>
+              <span className="tag">01</span>
+              <h3>Develop an integrated marketing strategy</h3>
+              <p>
+                One plan across print, digital, conferences, and AI &mdash; every
+                channel carrying the same narrative, sized to your budget, sequenced to
+                your buyers.
+              </p>
+            </div>
+            <div>
+              <span className="tag">02</span>
+              <h3>Pressure-test your GTM strategy</h3>
+              <p>
+                An outside read on segments, pricing, and win/loss &mdash; then fast
+                iteration cycles so the strategy improves quarterly instead of at the
+                annual offsite.
+              </p>
+            </div>
+            <div>
+              <span className="tag">03</span>
+              <h3>Capture bottom-of-funnel traffic</h3>
+              <p>
+                Own the searches, shortlists, and AI answers where deals are actually
+                decided &mdash; and establish the competitive differentiation that wins
+                them.
+              </p>
+            </div>
+            <div>
+              <span className="tag">04</span>
+              <h3>Align sales + marketing</h3>
+              <p>
+                Shared targets, shared narrative, shared pipeline &mdash; better
+                connectivity across the GTM so the handoffs stop leaking deals.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* ---------- SERVICES ---------- */}
+      <section data-reveal>
+        <div className="container">
+          <div className="section-head">
+            <h2>Services under our integrated strategy</h2>
+            <span className="kicker quiet">The Delivery Stack</span>
+          </div>
+          <p style={{ marginBottom: 28 }}>
+            Every engagement draws from the same stack &mdash; deployed together, not
+            sold apart.
+          </p>
+          <div className="chips">
+            <span className="chip blue">AI Ad Placement</span>
+            <span className="chip">Google Ads</span>
+            <span className="chip">Programmatic Display &amp; Video</span>
+            <span className="chip">Managed Conference Experiences</span>
+            <span className="chip">Print Campaigns</span>
+            <span className="chip">SEO</span>
+            <span className="chip">AI Search Visibility</span>
+            <span className="chip">Email &amp; Direct Mail</span>
+            <span className="chip">Creative &amp; Design</span>
+            <span className="chip">LinkedIn ABM</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- THE WORK ---------- */}
+      <section data-reveal>
+        <div className="container">
+          <div className="section-head">
+            <h2>What the work looks like</h2>
+            <span className="kicker quiet">Real Deliverables</span>
+          </div>
+          <div className="workrow">
+            {/*
+              Replace each SVG placeholder with a real (sanitized) image:
+              drop files into public/work/ and swap in
+              <img className="frame-media" src="/work/filename.png" alt="..." />
+            */}
+            <figure className="work-frame">
+              <svg className="frame-media" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#E8EBFB"/><rect x="40" y="48" width="200" height="14" fill="#0F1215"/><rect x="40" y="76" width="140" height="8" fill="#6E7680"/><rect x="40" y="120" width="90" height="110" fill="#FAFAF7"/><rect x="145" y="150" width="90" height="80" fill="#FAFAF7"/><rect x="250" y="100" width="110" height="130" fill="#2333E8"/><rect x="40" y="252" width="320" height="6" fill="#6E7680" opacity=".4"/></svg>
+              <figcaption>GTM Assessment — Findings Deck</figcaption>
+            </figure>
+            <figure className="work-frame">
+              <svg className="frame-media" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#0F1215"/><path d="M40 240 L110 214 L180 200 L250 192 L290 188 L360 60" stroke="#4C5CFF" strokeWidth="3" fill="none"/><line x1="40" y1="260" x2="360" y2="260" stroke="#6E7680"/><rect x="40" y="40" width="120" height="10" fill="#FAFAF7"/><rect x="40" y="60" width="80" height="8" fill="#6E7680"/></svg>
+              <figcaption>Channel Performance — Executive Readout</figcaption>
+            </figure>
+            <figure className="work-frame">
+              <svg className="frame-media" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#FAFAF7"/><rect x="40" y="44" width="240" height="16" fill="#0F1215"/><rect x="40" y="84" width="320" height="1" fill="#6E7680"/><rect x="40" y="108" width="300" height="8" fill="#6E7680" opacity=".7"/><rect x="40" y="126" width="280" height="8" fill="#6E7680" opacity=".7"/><rect x="40" y="144" width="300" height="8" fill="#6E7680" opacity=".7"/><rect x="40" y="184" width="110" height="34" fill="#2333E8"/><rect x="40" y="240" width="320" height="1" fill="#6E7680"/></svg>
+              <figcaption>Messaging Framework — Sales-Ready</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- CTA ---------- */}
       <div className="cta-band">
         <div className="container">
-          <h2>Start with the diagnostic.</h2>
+          <h2>Start with a consultation.</h2>
           <p>
-            One conversation. We&rsquo;ll tell you whether the stall is a marketing problem
-            — and if it isn&rsquo;t, we&rsquo;ll tell you that too.
+            One working session on where you want to grow. You leave with a clear view
+            of your options.
           </p>
-          <Link href="/request-a-diagnostic" className="btn primary">
-            Request a Diagnostic
+          <Link href="/request-a-consultation" className="btn primary">
+            Request a Consultation
           </Link>
         </div>
       </div>
