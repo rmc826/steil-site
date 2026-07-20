@@ -57,6 +57,7 @@ const nav = [
   { href: '/focus-areas', label: 'Focus Areas' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/who-we-help', label: 'Who We Help' },
+  { href: '/insights', label: 'Insights' },
   { href: '/contact', label: 'Contact' },
   { href: '/request-a-consultation', label: 'Request a Consultation' },
 ];

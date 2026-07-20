@@ -12,6 +12,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/who-we-help`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/request-a-consultation`, lastModified, changeFrequency: 'yearly', priority: 0.9 },
     { url: `${base}/contact`, lastModified, changeFrequency: 'yearly', priority: 0.6 },
+    { url: `${base}/insights`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${base}/insights/next-segment-in-your-crm`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${base}/insights/ai-search-shortlist-channel`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${base}/insights/direct-mail-2026`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
     // Add /why-pe-backed-saas-stalls here when the essay publishes (and remove its noindex)
   ];
 }

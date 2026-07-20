@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Who We Help — Executive, Marketing & Sales Teams at B2B Software Companies',
   description:
-    'STEIL works with executive, marketing, and sales leaders at $15\u201350M B2B software and data companies: find the blue ocean, accelerate the marketing engine, and sharpen the competitive edge.',
+    'STEIL works with executive, marketing, and sales leaders at B2B software and data companies: find the blue ocean, accelerate the marketing engine, and sharpen the competitive edge.',
   alternates: { canonical: '/who-we-help' },
 };
 
@@ -16,87 +16,73 @@ export default function WhoWeHelp() {
           <span className="kicker">Who We Help</span>
           <h1>Built for the people carrying the number.</h1>
           <p className="lede">
-            STEIL works with $15&ndash;50M B2B software and data companies &mdash; and
-            inside them, with the three seats that own growth. Different chair,
-            different pressure, same engine underneath.
+            Three seats own growth at a B2B software company. Different chair,
+            different pressure &mdash; same engine underneath.
           </p>
         </div>
       </section>
 
-      <section data-reveal>
+      <section className="no-rule" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="section-head">
-            <h2>Executives</h2>
-            <span className="kicker quiet">CEO · CRO · Board</span>
-          </div>
-          <div className="stack">
-            <p>
-              <strong>Find the blue ocean, and pressure-test the commercial motion.</strong>
-            </p>
-            <p>
-              You&rsquo;re carrying the growth thesis, and the honest question is
-              whether the current motion can deliver it. STEIL brings an outside read:
-              where the untapped segments and use cases are, what the win/loss data
-              actually says, whether pricing is leaving value on the table &mdash; and
-              a stress test of the commercial engine before the market runs one for
-              you.
-            </p>
-            <p>
-              What you get: a growth thesis you can defend in any room, backed by a GTM
-              stack that&rsquo;s actually deployed against it.
-            </p>
+          <div className="area" data-reveal>
+            <div><div className="bignum">01</div></div>
+            <div>
+              <h3>Executives</h3>
+              <p>
+                <strong>Find the blue ocean. Pressure-test the commercial motion.</strong>{' '}
+                An outside read on where growth actually comes from &mdash; and a GTM
+                stack deployed against it, not a deck that dies in a drawer.
+              </p>
+              <div className="chips">
+                <span className="chip">CEO</span>
+                <span className="chip">CRO</span>
+                <span className="chip">Board</span>
+                <span className="chip blue">Growth Thesis, Defended</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section data-reveal>
+      <div className="area-dark" data-reveal>
         <div className="container">
-          <div className="section-head">
-            <h2>Marketing</h2>
-            <span className="kicker quiet">CMO · VP Marketing</span>
-          </div>
-          <div className="stack">
-            <p>
-              <strong>Accelerate your marketing engine.</strong>
-            </p>
-            <p>
-              You&rsquo;re expected to produce enterprise-grade output with a
-              mid-market team &mdash; more channels, more content, more pipeline
-              contribution, same headcount. STEIL plugs in as senior horsepower:
-              strategy support at your level, plus hands-on execution across paid
-              search, SEO, AI search, programmatic, creative, email, and direct mail.
-            </p>
-            <p>
-              What you get: an engine that ships every week, instrumentation that
-              proves what&rsquo;s working, and a partner who makes you look right
-              &mdash; not a vendor you have to manage.
-            </p>
+          <div className="area" style={{ borderTop: 'none', padding: 0 }}>
+            <div><div className="bignum">02</div></div>
+            <div>
+              <h3>Marketing</h3>
+              <p>
+                <strong>Accelerate your marketing engine.</strong> Enterprise-grade
+                output on a mid-market budget: senior strategy support plus hands-on
+                execution across every channel &mdash; a partner who makes you look
+                right, not a vendor you manage.
+              </p>
+              <div className="chips" style={{ marginTop: 20 }}>
+                <span className="chip">CMO</span>
+                <span className="chip">VP Marketing</span>
+                <span className="chip blue">An Engine That Ships Weekly</span>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section data-reveal>
+      <section className="no-rule">
         <div className="container">
-          <div className="section-head">
-            <h2>Sales</h2>
-            <span className="kicker quiet">CRO · VP Sales</span>
-          </div>
-          <div className="stack">
-            <p>
-              <strong>Sharpen your competitive edge and win faster.</strong>
-            </p>
-            <p>
-              Your team is walking into deals where the competitor got there first
-              &mdash; in the buyer&rsquo;s research, in the analyst note, in the answer
-              ChatGPT gave them before your first call. STEIL builds the air cover:
-              positioning grounded in win/loss truth, sales-ready messaging your reps
-              can actually say, competitive intel that&rsquo;s current, and top-of-funnel
-              programs that warm accounts before outreach.
-            </p>
-            <p>
-              What you get: fuller pipeline at the top, sharper differentiation in the
-              deal, shorter cycles at the close.
-            </p>
+          <div className="area" style={{ borderTop: 'none' }} data-reveal>
+            <div><div className="bignum">03</div></div>
+            <div>
+              <h3>Sales</h3>
+              <p>
+                <strong>Sharpen your competitive edge and win faster.</strong>{' '}
+                Positioning built on win/loss truth, messaging your reps can say out
+                loud, and top-of-funnel programs that warm accounts before outreach.
+              </p>
+              <div className="chips">
+                <span className="chip">CRO</span>
+                <span className="chip">VP Sales</span>
+                <span className="chip blue">Fuller Pipeline, Shorter Cycles</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

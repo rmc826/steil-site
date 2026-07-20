@@ -24,7 +24,7 @@ AI Ad Placement · Google Ads · Programmatic Display & Video · Managed Confere
 
 ## Proof
 - Hero stats: **+50% new-logo pipeline · 7x valuation · +30% new logos** — labeled "From past engagements."
-- Past Engagements marquee: **HiLabs, Powerfleet, Derive Systems.**
+- "Trusted by" marquee: **HiLabs, Powerfleet, Derive Systems.** (renamed from Past Engagements 2026-07-20)
 - Attribution stories per stat: OWED (see planner P1). Employment-agreement review: OWED (F4).
 
 ## Visual system
@@ -33,7 +33,8 @@ AI Ad Placement · Google Ads · Programmatic Display & Video · Managed Confere
 - Wordmark = fixed vector paths (components/Wordmark.tsx). Never retype.
 
 ## Page inventory
-/ · /focus-areas · /how-it-works · /who-we-help (by buying group: Exec / Marketing / Sales) · /request-a-consultation · /contact · /why-pe-backed-saas-stalls (draft, noindex until essay final)
+/ · /focus-areas · /how-it-works · /who-we-help · /insights (+3 articles) · /request-a-consultation · /contact · /why-pe-backed-saas-stalls (draft, noindex)
+Design system per page: oversized mono numerals, tight copy (2 sentences/block), service chips, one dark or photo band per page, reveal-on-scroll. "Operator-led" language banned. Insights = content home; LinkedIn posts link to articles, articles target SEO phrases (growth advisory, AI search visibility, B2B marketing).
 Redirects: /who-its-for → /who-we-help · /request-a-diagnostic → /request-a-consultation
 
 ## Tech
@@ -42,6 +43,7 @@ Next.js 15 static export on Vercel. Env vars (build-time — redeploy after chan
 ## Decision log
 - 2026-07-19: Brand kit v1.0. Editorial system, electric ultramarine accent.
 - 2026-07-19: Site live on Vercel + Namecheap DNS.
+- 2026-07-20 (later): How It Works + Who We Help rebuilt visual-first; "operator-led" removed; Insights section added with 3 seed articles; marquee relabeled Trusted by.
 - 2026-07-20: Operator voice REJECTED → agency voice. "Top of funnel" hero REJECTED → blue ocean triplet. Chart graphic REJECTED → photo hero. Mountains REJECTED → conference-room photography. Diagnostic → Consultation. German lore removed. Who It's For → Who We Help (by buying group). Hero stats + Past Engagements marquee added at Ryan's direction.
 
 ## Backlog (next sprints)

@@ -16,7 +16,7 @@ export default function Marquee() {
     <div className="marquee-band">
       <div className="marquee-label">
         <span className="kicker quiet" style={{ marginBottom: 0 }}>
-          Past Engagements
+          Trusted by
         </span>
       </div>
       <div className="marquee">
