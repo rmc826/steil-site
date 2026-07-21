@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'From a race to the bottom to a category of one',
   description:
     'How a 20-person B2B carve-out inside a consumer automotive brand rebuilt its go-to-market — from targeting to messaging — moving off a low-margin, high-competition product and onto a high-margin, low-competition one. 5× pipeline, 3 new enterprise logos, 30% return on conference spend.',
-  alternates: { canonical: '/case-studies/fleet-carve-out' },
+  alternates: { canonical: '/insights/fleet-carve-out' },
 };
 
 const jsonLd = {
@@ -15,7 +15,7 @@ const jsonLd = {
   author: { '@type': 'Organization', name: 'The Steil Group' },
   publisher: { '@type': 'Organization', name: 'The Steil Group', url: 'https://thesteilgroup.com' },
   datePublished: '2026-07-20',
-  mainEntityOfPage: 'https://thesteilgroup.com/case-studies/fleet-carve-out',
+  mainEntityOfPage: 'https://thesteilgroup.com/insights/fleet-carve-out',
 };
 
 export default function CaseStudy() {

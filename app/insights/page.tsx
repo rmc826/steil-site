@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'fleet-carve-out',
+    date: 'Jul 2026',
+    title: 'From a race to the bottom to a category of one',
+    teaser: 'How a 20-person B2B carve-out rebuilt its go-to-market — and turned a commodity into a premium. 5× pipeline, 3 new enterprise logos.',
+    label: 'Case Study',
+  },
+  {
     slug: 'next-segment-in-your-crm',
     date: 'Jul 2026',
     title: 'Your next growth segment is already in your CRM',
@@ -46,7 +53,7 @@ export default function Insights() {
         <div className="container">
           {posts.map((p) => (
             <div className="insight-item" key={p.slug} data-reveal>
-              <span className="date">{p.date}</span>
+              <span className="date">{'label' in p ? `${p.label} · ${p.date}` : p.date}</span>
               <div>
                 <h3><Link href={`/insights/${p.slug}`}>{p.title}</Link></h3>
                 <p>{p.teaser}</p>

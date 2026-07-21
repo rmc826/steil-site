@@ -3,6 +3,7 @@
     { "source": "/who-its-for", "destination": "/who-we-help", "permanent": true },
     { "source": "/how-it-works", "destination": "/focus-areas", "permanent": true },
     { "source": "/request-a-consultation", "destination": "/contact", "permanent": true },
-    { "source": "/request-a-diagnostic", "destination": "/contact", "permanent": true }
+    { "source": "/request-a-diagnostic", "destination": "/contact", "permanent": true },
+    { "source": "/case-studies/fleet-carve-out", "destination": "/insights/fleet-carve-out", "permanent": true }
   ]
 }
