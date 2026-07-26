@@ -8,9 +8,30 @@ export const metadata: Metadata = {
   alternates: { canonical: '/about' },
 };
 
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'The Steil Group',
+      alternateName: 'STEIL',
+      url: 'https://thesteilgroup.com',
+      founder: {
+        '@type': 'Person',
+        name: 'Ryan Campbell',
+        alternateName: 'RC',
+        jobTitle: 'Founder',
+        worksFor: { '@type': 'Organization', name: 'The Steil Group' },
+      },
+    },
+  },
+];
+
 export default function About() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="hero no-rule">
         <div className="container">
           <span className="kicker">About</span>

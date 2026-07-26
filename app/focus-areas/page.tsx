@@ -9,9 +9,49 @@ export const metadata: Metadata = {
   alternates: { canonical: '/focus-areas' },
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What does STEIL do?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'STEIL is a GTM-as-a-Service agency for B2B software and data companies ($15–50M revenue). We deliver integrated marketing strategy, demand generation, AI search optimization, and sales-marketing alignment — functioning as an outsourced marketing department accountable to pipeline and EBITDA.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is GTM-as-a-Service?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'GTM-as-a-Service is STEIL\'s model for delivering a full go-to-market function — strategy through execution — without the company needing to build an in-house marketing team. It includes integrated marketing strategy, demand generation, AI search visibility, conference marketing, print campaigns, and sales enablement, all managed as a unified engagement.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is AI search optimization?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AI search optimization ensures your company appears in recommendations when buyers ask ChatGPT, Claude, Perplexity, and other AI assistants who to shortlist. It is a distinct discipline from traditional SEO — AI models weight structured entity data, consistent positioning across sources, and citable third-party authority.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What size companies does STEIL work with?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'STEIL works with B2B software and data companies in the $15–50M revenue range — typically companies that need enterprise-grade marketing capability but cannot justify building a full in-house team. Clients include CEOs, CROs, VPs of Sales, and VPs of Marketing.',
+      },
+    },
+  ],
+};
+
 export default function FocusAreas() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <section className="hero no-rule">
         <div className="container">
           <span className="kicker">Focus Areas</span>
@@ -129,6 +169,53 @@ export default function FocusAreas() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div className="container">
+          <div className="section-head">
+            <h2>Frequently asked questions</h2>
+          </div>
+          <ul className="hairlist">
+            <li>
+              <h3>What does STEIL do?</h3>
+              <p>
+                STEIL is a GTM-as-a-Service agency for B2B software and data companies
+                ($15&ndash;50M revenue). We deliver integrated marketing strategy, demand
+                generation, AI search optimization, and sales-marketing alignment &mdash;
+                functioning as an outsourced marketing department accountable to pipeline
+                and EBITDA.
+              </p>
+            </li>
+            <li>
+              <h3>What is GTM-as-a-Service?</h3>
+              <p>
+                It&rsquo;s our model for delivering a full go-to-market function &mdash;
+                strategy through execution &mdash; without the company needing to build an
+                in-house marketing team. It includes everything from{' '}
+                <Link href="/insights/perspectives/ai-search-shortlist-channel">AI search visibility</Link>{' '}
+                to conference marketing to sales enablement, managed as a unified engagement.
+              </p>
+            </li>
+            <li>
+              <h3>What is AI search optimization?</h3>
+              <p>
+                It ensures your company appears in recommendations when buyers ask
+                ChatGPT, Claude, Perplexity, and other AI assistants who to shortlist. It
+                is a distinct discipline from traditional SEO &mdash;{' '}
+                <Link href="/insights/perspectives/ai-search-shortlist-channel">read more about it</Link>.
+              </p>
+            </li>
+            <li>
+              <h3>What size companies does STEIL work with?</h3>
+              <p>
+                B2B software and data companies in the $15&ndash;50M revenue range.{' '}
+                <Link href="/who-we-help">See who we help</Link> for more on the roles
+                and buying groups we work with.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 

@@ -8,9 +8,41 @@ export const metadata: Metadata = {
   alternates: { canonical: '/who-we-help' },
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How does STEIL work with executive teams?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'STEIL works directly with CEOs, CROs, and boards to pressure-test the commercial motion, identify untapped growth segments, and deploy a GTM stack against them. Every readout is built for the boardroom — pipeline coverage, CAC trajectory, hold-period math.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can STEIL replace an in-house marketing team?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. STEIL functions as a fractional marketing department — senior strategy plus hands-on execution across every channel. Clients get enterprise-grade output on a mid-market budget without hiring a full team. We plug into your existing structure and operate as an extension of the company.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How does STEIL help sales teams?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'STEIL builds positioning from win/loss truth, creates messaging sales reps can actually use, and runs top-of-funnel programs that warm accounts before outreach. The result is a fuller pipeline and shorter sales cycles.',
+      },
+    },
+  ],
+};
+
 export default function WhoWeHelp() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <section className="hero no-rule">
         <div className="container">
           <span className="kicker">Who We Help</span>
@@ -85,6 +117,44 @@ export default function WhoWeHelp() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div className="container">
+          <div className="section-head">
+            <h2>Common questions</h2>
+          </div>
+          <ul className="hairlist">
+            <li>
+              <h3>How does STEIL work with executive teams?</h3>
+              <p>
+                We work directly with CEOs, CROs, and boards to pressure-test the
+                commercial motion, identify{' '}
+                <Link href="/insights/perspectives/next-segment-in-your-crm">untapped growth segments</Link>,
+                and deploy a GTM stack against them. Every readout is built for the
+                boardroom.
+              </p>
+            </li>
+            <li>
+              <h3>Can STEIL replace an in-house marketing team?</h3>
+              <p>
+                Yes. We function as a fractional marketing department &mdash; senior
+                strategy plus hands-on execution across every channel. See our{' '}
+                <Link href="/focus-areas">four core areas</Link> and the{' '}
+                <Link href="/insights/case-studies/fleet-carve-out">fleet carve-out case study</Link>{' '}
+                for how an engagement runs in practice.
+              </p>
+            </li>
+            <li>
+              <h3>How does STEIL help sales teams?</h3>
+              <p>
+                We build positioning from win/loss truth, create messaging reps can
+                actually use, and run top-of-funnel programs that warm accounts before
+                outreach. The result is a fuller pipeline and shorter sales cycles.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 

@@ -67,10 +67,49 @@ const nav = [
   { href: '/about', label: 'About' },
 ];
 
+const orgJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'The Steil Group',
+  alternateName: 'STEIL',
+  url: 'https://thesteilgroup.com',
+  logo: 'https://thesteilgroup.com/icon.svg',
+  description:
+    'GTM-as-a-Service for B2B software and data companies ($15–50M revenue). Integrated marketing strategy, demand generation, AI search optimization, and sales-marketing alignment — delivered as a fractional marketing function.',
+  email: 'rc@steilgrowth.com',
+  areaServed: { '@type': 'Country', name: 'United States' },
+  founder: {
+    '@type': 'Person',
+    name: 'Ryan Campbell',
+    alternateName: 'RC',
+    jobTitle: 'Founder',
+  },
+  serviceType: [
+    'GTM-as-a-Service',
+    'Integrated marketing strategy',
+    'Demand generation',
+    'AI search optimization',
+    'Go-to-market advisory',
+    'Sales and marketing alignment',
+    'B2B marketing',
+    'Programmatic advertising',
+    'LinkedIn ABM',
+    'Conference marketing',
+  ],
+  knowsAbout: [
+    'B2B software marketing',
+    'Go-to-market strategy',
+    'AI search visibility',
+    'Demand generation for mid-market software',
+    'PE-backed software growth',
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
         <header className="site-header">
           <div className="container nav">
             <Link href="/" className="wordmark-link" aria-label="STEIL home">
