@@ -22,10 +22,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Can STEIL replace an in-house marketing team?',
+      name: 'How does STEIL work alongside an existing marketing team?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. STEIL functions as a fractional marketing department — senior strategy plus hands-on execution across every channel. Clients get enterprise-grade output on a mid-market budget without hiring a full team. We plug into your existing structure and operate as an extension of the company.',
+        text: 'STEIL plugs into your existing team and scales what they can do — senior strategy support plus hands-on execution across channels your team hasn\'t had bandwidth to staff. We operate as an extension of the company, filling gaps and adding capacity so the in-house team can focus on what they do best.',
       },
     },
     {
@@ -137,10 +137,11 @@ export default function WhoWeHelp() {
               </p>
             </li>
             <li>
-              <h3>Can STEIL replace an in-house marketing team?</h3>
+              <h3>How does STEIL work alongside an existing marketing team?</h3>
               <p>
-                Yes. We function as a fractional marketing department &mdash; senior
-                strategy plus hands-on execution across every channel. See our{' '}
+                We plug into your team and scale what they can do &mdash; senior
+                strategy support plus hands-on execution across channels your team
+                hasn&rsquo;t had bandwidth to staff. See our{' '}
                 <Link href="/focus-areas">four core areas</Link> and the{' '}
                 <Link href="/insights/case-studies/fleet-carve-out">fleet carve-out case study</Link>{' '}
                 for how an engagement runs in practice.

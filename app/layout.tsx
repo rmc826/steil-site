@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     template: '%s — STEIL',
   },
   description:
-    'STEIL is the outsourced marketing function for PE-backed and small-cap software companies: partner-level GTM strategy, full-channel execution, accountable to pipeline and EBITDA.',
+    'STEIL helps B2B software and data companies scale their marketing operations: partner-level GTM strategy and full-channel execution, delivered as a service.',
   openGraph: {
     siteName: 'The Steil Group',
     type: 'website',
@@ -75,7 +75,7 @@ const orgJsonLd = {
   url: 'https://thesteilgroup.com',
   logo: 'https://thesteilgroup.com/icon.svg',
   description:
-    'GTM-as-a-Service for B2B software and data companies ($15–50M revenue). Integrated marketing strategy, demand generation, AI search optimization, and sales-marketing alignment — delivered as a fractional marketing function.',
+    'GTM-as-a-Service for B2B software and data companies ($15–50M revenue). Integrated marketing strategy, demand generation, AI search optimization, and sales-marketing alignment — scaling your marketing team with senior strategy and execution.',
   email: 'rc@steilgrowth.com',
   areaServed: { '@type': 'Country', name: 'United States' },
   founder: {

@@ -18,7 +18,7 @@ const faqJsonLd = {
       name: 'What does STEIL do?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'STEIL is a GTM-as-a-Service agency for B2B software and data companies ($15–50M revenue). We deliver integrated marketing strategy, demand generation, AI search optimization, and sales-marketing alignment — functioning as an outsourced marketing department accountable to pipeline and EBITDA.',
+        text: 'STEIL is a GTM-as-a-Service agency for B2B software and data companies ($15–50M revenue). We help marketing teams scale by adding senior strategy, demand generation, AI search optimization, and sales-marketing alignment — delivered as a service.',
       },
     },
     {
@@ -184,8 +184,8 @@ export default function FocusAreas() {
                 STEIL is a GTM-as-a-Service agency for B2B software and data companies
                 ($15&ndash;50M revenue). We deliver integrated marketing strategy, demand
                 generation, AI search optimization, and sales-marketing alignment &mdash;
-                functioning as an outsourced marketing department accountable to pipeline
-                and EBITDA.
+                helping your marketing team scale with senior strategy and execution,
+                delivered as a service.
               </p>
             </li>
             <li>
