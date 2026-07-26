@@ -12,10 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/contact`, lastModified, changeFrequency: 'yearly', priority: 0.6 },
     { url: `${base}/about`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
     { url: `${base}/insights`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${base}/insights/fleet-carve-out`, lastModified, changeFrequency: 'yearly', priority: 0.8 },
-    { url: `${base}/insights/next-segment-in-your-crm`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
-    { url: `${base}/insights/ai-search-shortlist-channel`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
-    { url: `${base}/insights/direct-mail-2026`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
-    // Add /why-pe-backed-saas-stalls here when the essay publishes (and remove its noindex)
+    { url: `${base}/insights/case-studies/fleet-carve-out`, lastModified, changeFrequency: 'yearly', priority: 0.8 },
+    { url: `${base}/insights/perspectives/next-segment-in-your-crm`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${base}/insights/perspectives/ai-search-shortlist-channel`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${base}/insights/perspectives/direct-mail-2026`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
   ];
 }

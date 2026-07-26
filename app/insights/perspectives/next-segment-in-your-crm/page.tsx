@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Your next growth segment is already in your CRM',
   description: 'Off-profile customers are the strongest demand signal a company can get: buyers who fought through positioning not written for them. How to read your closed-won data as an expansion map.',
-  alternates: { canonical: '/insights/next-segment-in-your-crm' },
+  alternates: { canonical: '/insights/perspectives/next-segment-in-your-crm' },
 };
 
 const jsonLd = {
@@ -14,7 +14,7 @@ const jsonLd = {
   author: { '@type': 'Organization', name: 'The Steil Group' },
   publisher: { '@type': 'Organization', name: 'The Steil Group', url: 'https://thesteilgroup.com' },
   datePublished: '2026-07-21',
-  mainEntityOfPage: 'https://thesteilgroup.com/insights/next-segment-in-your-crm',
+  mainEntityOfPage: 'https://thesteilgroup.com/insights/perspectives/next-segment-in-your-crm',
 };
 
 export default function Article() {

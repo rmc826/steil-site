@@ -4,6 +4,10 @@
     { "source": "/how-it-works", "destination": "/focus-areas", "permanent": true },
     { "source": "/request-a-consultation", "destination": "/contact", "permanent": true },
     { "source": "/request-a-diagnostic", "destination": "/contact", "permanent": true },
-    { "source": "/case-studies/fleet-carve-out", "destination": "/insights/fleet-carve-out", "permanent": true }
+    { "source": "/case-studies/fleet-carve-out", "destination": "/insights/case-studies/fleet-carve-out", "permanent": true },
+    { "source": "/insights/fleet-carve-out", "destination": "/insights/case-studies/fleet-carve-out", "permanent": true },
+    { "source": "/insights/next-segment-in-your-crm", "destination": "/insights/perspectives/next-segment-in-your-crm", "permanent": true },
+    { "source": "/insights/ai-search-shortlist-channel", "destination": "/insights/perspectives/ai-search-shortlist-channel", "permanent": true },
+    { "source": "/insights/direct-mail-2026", "destination": "/insights/perspectives/direct-mail-2026", "permanent": true }
   ]
 }

@@ -94,6 +94,19 @@ section.no-rule { border-top: none; }
 }
 .nav ul a:hover, .nav ul a[aria-current="page"] { border-bottom-color: var(--steil-blue); }
 
+/* nav dropdown */
+.nav li.has-dropdown { position: relative; }
+.nav .nav-dropdown {
+  display: none; position: absolute; top: 100%; left: 0;
+  background: var(--paper); border: var(--hairline); padding: 10px 0;
+  min-width: 180px; flex-direction: column; gap: 0; z-index: 100;
+  margin-top: 8px;
+}
+.nav li.has-dropdown:hover .nav-dropdown { display: flex; }
+.nav .nav-dropdown li { padding: 0; }
+.nav .nav-dropdown a { display: block; padding: 8px 20px; white-space: nowrap; border-bottom: none; }
+.nav .nav-dropdown a:hover { background: var(--ice); border-bottom: none; }
+
 /* the grade divider — one per page, under the masthead */
 .grade-rule { height: 40px; position: relative; overflow: hidden; }
 .grade-rule svg { position: absolute; left: 0; bottom: 0; height: 100%; width: 100%; }

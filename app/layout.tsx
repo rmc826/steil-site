@@ -56,7 +56,14 @@ export const metadata: Metadata = {
 const nav = [
   { href: '/focus-areas', label: 'Focus Areas' },
   { href: '/who-we-help', label: 'Who We Help' },
-  { href: '/insights', label: 'Insights' },
+  {
+    href: '/insights',
+    label: 'Insights',
+    children: [
+      { href: '/insights/case-studies/fleet-carve-out', label: 'Case Studies' },
+      { href: '/insights/perspectives/next-segment-in-your-crm', label: 'Perspectives' },
+    ],
+  },
   { href: '/about', label: 'About' },
 ];
 
@@ -72,8 +79,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav aria-label="Primary">
               <ul>
                 {nav.map((item) => (
-                  <li key={item.href}>
+                  <li key={item.href} className={'children' in item ? 'has-dropdown' : undefined}>
                     <Link href={item.href}>{item.label}</Link>
+                    {'children' in item && (
+                      <ul className="nav-dropdown">
+                        {(item as any).children.map((child: any) => (
+                          <li key={child.href}>
+                            <Link href={child.href}>{child.label}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
                 <li>

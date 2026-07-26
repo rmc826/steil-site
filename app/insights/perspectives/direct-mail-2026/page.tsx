@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'The channel with a 100% open rate',
   description: 'Executives get 150 emails a day and two interesting packages a year. Why targeted dimensional mail is the highest-response executive channel of 2026 \u2014 and how to sequence it with email.',
-  alternates: { canonical: '/insights/direct-mail-2026' },
+  alternates: { canonical: '/insights/perspectives/direct-mail-2026' },
 };
 
 const jsonLd = {
@@ -14,7 +14,7 @@ const jsonLd = {
   author: { '@type': 'Organization', name: 'The Steil Group' },
   publisher: { '@type': 'Organization', name: 'The Steil Group', url: 'https://thesteilgroup.com' },
   datePublished: '2026-07-21',
-  mainEntityOfPage: 'https://thesteilgroup.com/insights/direct-mail-2026',
+  mainEntityOfPage: 'https://thesteilgroup.com/insights/perspectives/direct-mail-2026',
 };
 
 export default function Article() {

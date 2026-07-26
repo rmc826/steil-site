@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'AI search: the shortlist channel nobody staffed',
   description: 'B2B buyers increasingly build their first vendor shortlist by asking ChatGPT, Claude, or Perplexity. Ranking on Google and being recommended by AI are different disciplines \u2014 and the gap is a land grab.',
-  alternates: { canonical: '/insights/ai-search-shortlist-channel' },
+  alternates: { canonical: '/insights/perspectives/ai-search-shortlist-channel' },
 };
 
 const jsonLd = {
@@ -14,7 +14,7 @@ const jsonLd = {
   author: { '@type': 'Organization', name: 'The Steil Group' },
   publisher: { '@type': 'Organization', name: 'The Steil Group', url: 'https://thesteilgroup.com' },
   datePublished: '2026-07-21',
-  mainEntityOfPage: 'https://thesteilgroup.com/insights/ai-search-shortlist-channel',
+  mainEntityOfPage: 'https://thesteilgroup.com/insights/perspectives/ai-search-shortlist-channel',
 };
 
 export default function Article() {
