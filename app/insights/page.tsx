@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { displayDate, listMdPosts } from '../../lib/insights';
 
 export const metadata: Metadata = {
   title: 'Insights — Growth Advisory & B2B Marketing',
@@ -39,6 +40,13 @@ const perspectives = [
 ];
 
 export default function Insights() {
+  const mdPerspectives = listMdPosts().map((p) => ({
+    slug: p.slug,
+    date: displayDate(p.date),
+    title: p.title,
+    teaser: p.description,
+  }));
+  const allPerspectives = [...mdPerspectives, ...perspectives];
   return (
     <>
       <section className="hero no-rule">
@@ -74,7 +82,7 @@ export default function Insights() {
           <div className="section-head">
             <h2>Perspectives</h2>
           </div>
-          {perspectives.map((p) => (
+          {allPerspectives.map((p) => (
             <div className="insight-item" key={p.slug} data-reveal>
               <span className="date">{p.date}</span>
               <div>
